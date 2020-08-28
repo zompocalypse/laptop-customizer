@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Main from './Main';
-import FEATURES from './Store';
 
 import './App.css';
 
@@ -43,7 +42,7 @@ export default class App extends Component {
         <Main
           selected={selected}
           updateFeature={this.updateFeature} 
-          FEATURES={FEATURES}/>
+          />
       </div>
     );
   }

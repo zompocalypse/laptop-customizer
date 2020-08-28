@@ -10,7 +10,7 @@ export default function SelectorFeatures({ selected, updateFeature }) {
       <SelectorFeatureSet
         selected={selected}
         updateFeature={updateFeature}
-        FEATURES={FEATURES}
+        store={FEATURES}
         featureHash={featureHash}
         feature={feature}
       />
