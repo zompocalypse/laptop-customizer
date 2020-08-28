@@ -8,7 +8,7 @@ export default function Main({ selected, updateFeature, FEATURES }) {
       <Selector
         selected={selected}
         updateFeature={updateFeature} 
-        FEATURES={FEATURES}/>
+        />
       <Summary
         selected={selected}
         />

@@ -2,8 +2,8 @@ import React from 'react';
 import slugify from 'slugify';
 import SelectorFeatureEach from './SelectorFeatureEach';
 
-export default function SelectorFeatureSet({ selected, updateFeature, FEATURES, feature, featureHash}) {
-  const options = FEATURES[feature].map(item => {
+export default function SelectorFeatureSet({ selected, updateFeature, store, feature, featureHash}) {
+  const options = store[feature].map(item => {
     const itemHash = slugify(JSON.stringify(item));
     return (
         <SelectorFeatureEach
