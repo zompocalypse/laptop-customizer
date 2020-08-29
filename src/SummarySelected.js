@@ -8,6 +8,7 @@ export default function SummarySelected({ selected }) {
 
     return (
       <SummarySelectedOption
+        key={featureHash}
         featureHash={featureHash}
         feature={feature}
         selectedOption={selectedOption}

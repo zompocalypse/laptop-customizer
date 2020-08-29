@@ -6,12 +6,13 @@ export default function SelectorFeatureSet({
   store,
   feature,
   updateFeature,
-  selected,
+  selected
 }) {
   return store[feature].map((item) => {
     const itemHash = slugify(JSON.stringify(item));
     return (
       <SelectorFeatureEach
+        key={itemHash}
         feature={feature}
         updateFeature={updateFeature}
         selected={selected}

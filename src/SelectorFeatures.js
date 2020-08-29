@@ -8,6 +8,7 @@ export default function SelectorFeatures({ selected, updateFeature }) {
     const featureHash = feature + '-' + idx;
     return (
       <SelectorFeatureGroup
+        key={featureHash}
         selected={selected}
         updateFeature={updateFeature}
         store={FEATURES}
