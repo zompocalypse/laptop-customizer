@@ -8,7 +8,7 @@ export default function Summary({ selected }) {
     <section className="main__summary">
       <SummaryHeader />
       <SummarySelected selected={selected} />
-      <SummaryTotal selected={selected}/>
+      <SummaryTotal selected={selected} />
     </section>
-  )
+  );
 }

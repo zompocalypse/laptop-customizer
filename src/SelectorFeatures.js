@@ -1,20 +1,19 @@
 import React from 'react';
 
 import FEATURES from './Store';
-import SelectorFeatureSet from './SelectorFeatureSet';
+import SelectorFeatureGroup from './SelectorFeatureGroup';
 
 export default function SelectorFeatures({ selected, updateFeature }) {
-  const features = Object.keys(FEATURES).map((feature, idx) => {
+  return Object.keys(FEATURES).map((feature, idx) => {
     const featureHash = feature + '-' + idx;
     return (
-      <SelectorFeatureSet
+      <SelectorFeatureGroup
         selected={selected}
         updateFeature={updateFeature}
         store={FEATURES}
         featureHash={featureHash}
         feature={feature}
       />
-      );
+    );
   });
-  return features;
 }

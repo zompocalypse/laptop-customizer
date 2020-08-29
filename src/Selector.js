@@ -7,10 +7,7 @@ export default function Selector({ selected, updateFeature }) {
   return (
     <form className="main__form">
       <SelectorHeader />
-      <SelectorFeatures 
-        selected={selected}
-        updateFeature={updateFeature}
-      />
+      <SelectorFeatures selected={selected} updateFeature={updateFeature} />
     </form>
-  )
+  );
 }

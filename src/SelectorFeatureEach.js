@@ -1,12 +1,14 @@
 import React from 'react';
 import slugify from 'slugify';
+import USCurrencyFormat from './USCurrencyFormat';
 
-const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD'
-});
-
-export default function SelectorFeatureEach({ itemHash, item, feature, selected, updateFeature }) {
+export default function SelectorFeatureEach({
+  itemHash,
+  item,
+  feature,
+  selected,
+  updateFeature,
+}) {
   return (
     <div key={itemHash} className="feature__item">
       <input
